@@ -1,0 +1,19 @@
+<div class="card-container">
+    <div class="card-img">
+        <img ng-if="model.imgSrc" src="{{model.imgSrc}}" alt="{{model.imgAlt}}">
+    </div>
+    <div class="card-header">
+        <h1>{{model.title}}</h1>
+    </div>
+    <div class="card-body">
+        <p ng-transclude></p>
+    </div>
+    <div class="card-cta">
+        <a class="{{model.ctaType}}" href="#!{{model.ctaHref}}">
+            {{model.ctaText}}
+        </a>
+    </div>
+</div>
+
+
+

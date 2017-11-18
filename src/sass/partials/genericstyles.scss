@@ -1,0 +1,28 @@
+@import 'variables';
+
+$base-size: $padding;
+
+@mixin heading {
+  color: $color--headings;
+  font-weight: 300;
+}
+
+.heading {
+  @include heading;
+}
+
+.heading-h1 {
+  @include heading;
+  font-size: $base-size *2;
+  margin-top: $padding;
+  margin-bottom: 0;
+}
+
+.heading-h2 {
+  @include heading;
+  font-size: $base-size * 1.5;
+}
+
+.padding-right{
+  padding-right: $padding;
+}

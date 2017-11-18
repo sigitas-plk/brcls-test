@@ -1,0 +1,11 @@
+@import '../../node_modules/normalize.css/normalize';
+@import '../../node_modules/material-design-lite/src/material-design-lite-grid';
+@import 'partials/variables';
+@import 'partials/card.component';
+@import 'partials/genericstyles';
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: $color--body-text;
+}
+

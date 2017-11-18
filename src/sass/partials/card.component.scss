@@ -1,0 +1,66 @@
+@import 'variables';
+@import 'genericstyles';
+
+.card-container {
+  background-color: $color--widget-bg;
+}
+
+.card-img {
+  background-color: $color--no-picture;
+  height: 200px;
+}
+
+.card-header {
+  margin: $padding $padding*2;
+  * {
+    @include heading;
+    margin: 0;
+    font-size: 32px;
+  }
+}
+
+.card-body {
+  min-height: 100px; //static to avoid using flexbox here
+  padding: 0 $padding*2;
+  & p {
+    line-height: 150%;
+  }
+  & li {
+    padding: $padding/4 0;
+  }
+
+  & ul {
+    padding-left: $padding;
+  }
+
+}
+
+.card-cta {
+  padding: $padding $padding *2 $padding*2 $padding *2;
+  & > * {
+    border: none;
+    padding: 10px 30px;
+    border-radius: 20px;
+    text-decoration: none;
+    &:hover {
+      cursor: pointer;
+      background-color: lighten($color--no-picture, 5%);
+    }
+    &.primary {
+      background-color: $color--primary;
+      color: $color--text-light;
+      &:hover{
+        background-color: lighten($color--primary, 15%);
+      }
+    }
+    &.secondary {
+       background-color: $color--text-light;
+      border: 1px $color--primary solid;
+      color: $color--primary;
+      &:hover {
+        background-color: lighten($color--primary,60%);
+        border-color: lighten($color--primary, 20%);
+      }
+    }
+  }
+}

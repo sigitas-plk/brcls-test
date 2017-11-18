@@ -1,0 +1,43 @@
+[{
+  "img": {
+    "src": "",
+    "alt": ""
+  },
+  "body": {
+    "title": "Branch Details",
+    "text": ["Bullet Point 1", "Bullet Point 2", "Bullet Point 3"]
+  },
+  "cta": {
+    "text": "View",
+    "href": "/branch",
+    "type": "primary"
+  }
+}, {
+  "img": {
+    "src": "",
+    "alt": ""
+  },
+  "body": {
+    "title": "Product Details",
+    "text": "Promo content (maximum 1 paragraph)."
+  },
+  "cta": {
+    "text": "View",
+    "href": "/product",
+    "type": "primary"
+  }
+}, {
+  "img": {
+    "src": "",
+    "alt": ""
+  },
+  "body": {
+    "title": "ATM Locator",
+    "text": ["Bullet 1", "Bullet 2"]
+  },
+  "cta": {
+    "text": "Coming Soon..",
+    "href": "/atm",
+    "type": "secondary"
+  }
+}]

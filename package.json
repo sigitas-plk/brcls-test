@@ -1,0 +1,29 @@
+{
+  "name": "mvf_test",
+  "version": "1.0.0",
+  "description": "MVF Test",
+  "main": "index.js",
+  "dependencies": {
+    "angular-route": "^1.6.6",
+    "gulp": "^3.9.1",
+    "material-design-lite": "^1.3.0",
+    "normalize.css": "^7.0.0"
+  },
+  "devDependencies": {
+    "@types/angular": "^1.6.39",
+    "browser-sync": "^2.18.13",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-pleeease": "^2.0.2",
+    "gulp-plumber": "^1.1.0",
+    "gulp-preprocess": "^2.0.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-typescript": "^3.2.2",
+    "gulp-util": "^3.0.8",
+    "typescript": "^2.5.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sigitas Pleikys",
+  "license": "ISC"
+}

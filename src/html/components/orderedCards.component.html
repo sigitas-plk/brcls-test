@@ -1,0 +1,32 @@
+<div class="mdl-grid">
+    <div class="mdl-cell mdl-cell--12-col">
+        <label for="select">
+            <span class="heading-h2 padding-right">Sort By:</span>
+            <select name="select" id="select" ng-model="sortBy">
+                <option value="">Please Select..</option>
+                <option value="body.title">Alphabetical</option>
+                <option value="-body.title">Reverse Alphabetical</option>
+                <option value="body.title.length">Title Length</option>
+            </select>
+        </label>
+    </div>
+    <div class="mdl-cell mdl-cell--10-col mdl-cell--1-offset-desktop">
+        <div class="mdl-grid">
+            <div class="mdl-cell mdl-cell--4-col" ng-repeat="card in model.cards | orderBy: sortBy">
+                <card title="{{card.body.title}}"
+                      img-src="{{card.img.src}}"
+                      img-alt="{{card.img.alt}}"
+                      cta-text="{{card.cta.text}}"
+                      cta-type="{{card.cta.type}}"
+                      cta-href="{{card.cta.href}}">
+                    <p ng-if="!model.isArray(card.body.text)">
+                        {{card.body.text}}
+                    </p>
+                    <ul ng-if="model.isArray(card.body.text) && card.body.text.length>0">
+                        <li ng-repeat="bullet in card.body.text track by $index">{{bullet}}</li>
+                    </ul>
+                </card>
+            </div>
+        </div>
+    </div>
+</div>
